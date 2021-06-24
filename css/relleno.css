@@ -1,0 +1,15 @@
+.relleno{
+    grid-area: relleno;
+    display: flex;
+}
+.foter__curva{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+@media screen and (max-width:768px){
+    .relleno{
+        display: none;
+    }
+}

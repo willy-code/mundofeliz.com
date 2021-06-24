@@ -1,0 +1,74 @@
+@import url(slider.css);
+@import url(font-awesome.css);
+/*slider*/
+@import url(menu.css);
+@import url(blog.css);
+@import url(siderbar.css);
+@import url(widget.css);
+@import url(main-card.css);
+@import url(fotter.css);
+@import url(relleno.css);
+@import url(izquierda.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor {
+    width:100%;
+    display: grid;
+    margin: 0 auto;
+    grid-gap:auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(5, auto);
+    grid-template-areas:
+                        "head head head"
+                        "central central central"
+                        "contenidos contenidos contenido_izquierdo"
+                        "widget1 widget1 widget1"
+                        "siderbar siderbar siderbar"
+                        "relleno relleno relleno"
+                        "foter foter foter";
+}
+/*.contenedor > div,
+.contenedor .contenido,
+.contenedor .siderbar,
+.contenedor .foter{
+   
+    padding: 10px;
+}*/
+body::-webkit-scrollbar{
+    width: 15px;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: rgba(13, 9, 248, 0.541);
+    border-radius: .3em;
+}
+@media screen and (max-width:768px){
+     .contenedor{
+    grid-template-areas:
+                        "head head head"
+                        "central central central"
+                        "contenidos contenidos contenido_izquierdo"
+                        "widget1 widget1 widget1"
+                        "siderbar siderbar siderbar"
+                        "relleno relleno relleno"
+                        "foter foter foter";
+    }
+    .contenedo .siderbar{
+    margin-top: auto;
+    }
+  .cabecera .cab, .cab1{
+        margin-top: 0;
+    }
+   
+}
+
+
+
+
+
+
+

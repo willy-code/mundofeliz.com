@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.slideshw ul, ol{
+	list-style: none;
+}
+
+body{
+	font-family: Open sans;
+	
+}
+
+.central{
+    top:-50px;
+    
+    grid-area: central;
+	position: relative;
+    z-index: 1;
+}
+
+.slider li, ul{
+	width: 100%;
+	height:auto;
+}
+
+.slider li{
+	overflow: hidden;
+}
+
+.slider li img{
+	width: 100%;
+    
+}
+
+
+
+@media screen and (max-width: 768px){
+	
+	.slider li img{
+		width: 100%;
+	}
+	
+	
+}

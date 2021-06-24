@@ -1,0 +1,64 @@
+.contenedor .widget{
+    grid-area:widget1;
+    height: 50vh;
+    width: 100%;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 89, 167, 0.288);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(52, 114, 122, 0), rgba(40, 6, 236, 0)), url(../img/naturaleza-medio-ambiente-ninos.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(64, 66, 66, 0), rgba(10, 3, 49, 0)), url(../img/naturaleza-medio-ambiente-ninos.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: cover;
+    background-size: cover;
+    height: 500px;
+}
+.widget__main{
+    display: flex;
+}
+.widget__text h1{
+    padding: 8px;
+    color: #fff;
+    font-size: 40px;
+}
+.widget__text p{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px;
+    
+}
+.conte_blog{
+    background: rgba(0, 0, 0, 0.39);
+    width: 90%;
+    top: 0px;
+    left: calc(50% - 50px);
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;/*propiedad suave al efecto*/
+    color: rgb(0, 255, 34);
+    font-size: 40px;
+}
+.conte_blog:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+.widget__btn{
+    
+    align-items: center;
+    justify-self: center;
+}
+@media screen and (max-width:768px){
+    .widget__text p{
+        width: auto;
+        font-size: 18px;
+    }
+    .widget__text h1{
+        font-size: 20px;
+    }
+}
